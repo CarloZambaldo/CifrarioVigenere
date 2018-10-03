@@ -1,6 +1,7 @@
 /*
 	Matrice di Vigenere
-	Programmato da Carlo Zambaldo 5CS
+	Programmato da Carlo Zambaldo, 5CS
+	Liceo Girolamo Fracastoro, Verona
 */
 
 #include <stdio.h>
