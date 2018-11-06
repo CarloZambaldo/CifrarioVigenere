@@ -40,6 +40,8 @@ int main(){
         }       
     }
     cout<<" Fine."<<endl;
+	
+    // Chiedo l'inserimento di una chiave
     cout<<"Inserire chiave di cifratura: ";
     cin>>chiave;
      
@@ -54,14 +56,16 @@ int main(){
     cout<<"Chiave salvata."<<endl<<endl;
     puts(chiave);
      
-    i=0;
     // Modifico la matrice frase
+    i=0;
     int L=strlen(frase);
     do{
         if (frase[i]<'A'){
-        for(int j=i;j<L;j++)
-        frase[j]=frase[j+1];
-        L--;frase[L]=' ';}
+            for(int j=i;j<L;j++)
+                frase[j]=frase[j+1];
+            L--; 
+            frase[L]=' ';
+	}
         else i++;
     } while (i<L);
   
